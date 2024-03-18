@@ -12,7 +12,7 @@ namespace OOPS_Advanced
         public int EmployeeId { get; set; }
         public string EmployeeName { get; set; }
         public string Address { get; set; }
-        public int Salary { get; set; }
+        public double Salary { get; set; }
         public Employee(int employeeId, string employeeName, string address,int salary, int companyId, string companyName, string location) : base(companyId, companyName, location)
         {
             EmployeeId = employeeId;
