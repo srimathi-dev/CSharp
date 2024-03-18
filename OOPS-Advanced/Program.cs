@@ -41,10 +41,44 @@ public class Program
         //Console.WriteLine("----------------------------");
 
         //Polymorphism
+        //Method overloading
         Calculator obj4 = new Calculator();
         obj4.Add(10, 20);
         obj4.Add(20, 20, 20);
+        obj4.Subtraction(100, 20);
 
+        Console.WriteLine("----------------------------");
+
+        //Method overriding
+        Bus bus = new Bus(6);
+        bus.BusDetails();
+
+        SemiBus semi = new SemiBus(8);
+        semi.BusDetails();
+
+        Console.WriteLine("-----------------------------");
+
+        Bus semiBus = new SemiBus(10);
+        semiBus.BusDetails();
+
+        SemiSchoolBus semiSchoolBus = new SemiSchoolBus(8);
+        semiSchoolBus.BusDetails();
+
+        Console.WriteLine("-------------------------------");
+
+        Bus seat = new SemiBus(12);
+        seat.BusCapacity();
+
+        SemiBus semiSeat = new SemiBus(6);
+        semiSeat.BusCapacity();
+
+        Console.WriteLine("-------------------------------");
+
+        Student student = new Student(1, "SRI", "ALUMNI");
+        student.StudentClassDetails();
+
+        Student teacher = new Student("MATHI", "TEACHER");
+        teacher.SchoolDetails();
 
     }
 }
